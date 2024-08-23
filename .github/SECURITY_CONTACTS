@@ -1,0 +1,15 @@
+# Defined below are the security contacts for this repo.
+#
+# They are the contact point for triaging and handling of incoming 
+# Security issues.
+#
+# The below names agree to abide by the
+# [Embargo Policy](https://github.com/{REPO}/{.github|REPO}/blob/main/SECURITY.md)
+# and will be removed and replaced if they violate that agreement.
+#
+# DO NOT REPORT SECURITY VULNERABILITIES DIRECTLY TO THESE NAMES, FOLLOW THE
+# INSTRUCTIONS AT https://github.com/{ORG|INDIVIDUAL}/{.github|REPO}/blob/main/SECURITY.md
+
+SECURITY_USER1 (@fGITHUB_ID)
+SECURITY_USER2 (@GITHUB_ID)
+SECURITY_USER3 (@GITHUB_ID)

@@ -1,0 +1,33 @@
+#file: noinspection YAMLSchemaValidation
+contact_links:
+    - name: Hackathon Website
+      url: https://{add-url}
+      about: Hackathon Description
+    # - name: Sprint to Milestone Planning
+    #  url: https://github.com/iPoetDev/template-hackathon-base/milestones
+    #  about: Project Planning & Organisation
+    # - name: Agile Projects Tool
+    #  url: https://github.com/iPoetDev/template-hackathon-base/projects
+    #  about: Agile Tool for Epics & User Stories per Sprint
+    # - name: Technical Wiki
+    #  url: https://github.com/iPoetDev/template-hackathon-base/wiki
+    #  about: "Technical Wiki: Getting Started & Requirments"
+    # - name: Repository Discussions
+    #  url: https://github.com/iPoetDev/template-hackathon-base/discussions
+    #  about: Open forum and contact point
+    - name: GitHub Communities - Issue & PR Templates
+      url: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests
+      about: Customize the templates for contributors when Issue or PR are open with defaults/standard approaches. Issue forms over manual markdown.
+    - name: GitHub Community Support
+      url: https://github.com/orgs/community/discussions
+      about: Please ask and answer questions here.
+    - name: GitHub Security Bug Bounty
+      url: https://bounty.github.com/
+      about: Please report security vulnerabilities here.
+blank_issues_enabled: true
+
+# EDITING:
+# On GitHub, on repo template copy, these files will be duplicated so
+# 1. Edit this file and replace  https://github.com/{org}/{repo-name}
+# 2. Update the individual links in .github/ISSUE_TEMPLATE/config.yml
+# 3. Commit and push

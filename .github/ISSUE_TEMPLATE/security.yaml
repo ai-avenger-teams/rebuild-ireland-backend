@@ -1,0 +1,85 @@
+name: 🔒 Security Issue Report
+
+description: Report a security issue related to the repository.
+
+title: "[Security] 🔒 "
+
+labels: ["security"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a security issue. Your input is crucial for maintaining the security of the project.
+
+  - type: dropdown
+    id: issue-topic
+    attributes:
+      label: Security Issue Topic
+      description: Select the topic that best fits your security issue.
+      options:
+        - Library Version Bump
+        - DependencyBot
+        - Secret Exposure
+        - CVE (Common Vulnerabilities and Exposures)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority-level
+    attributes:
+      label: Priority Level
+      description: Select the priority level for this issue.
+      options:
+        - Priority 0 (Critical)
+        - Priority 1 (High)
+        - Priority 2 (Medium)
+        - Priority 3 (Low)
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Issue Description
+      description: Provide a clear and detailed description of the security issue.
+      placeholder: Describe the security issue here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: List the steps to reproduce the security issue, if applicable.
+      placeholder: Provide steps to reproduce the issue here.
+    validations:
+      required: false
+
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Suggested Mitigation
+      description: If applicable, provide any suggested mitigations or fixes for the issue.
+      placeholder: Suggest mitigation strategies here.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Provide any relevant details, links, or references that might help us understand the issue better.
+      placeholder: Provide additional information here.
+    validations:
+      required: false
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources and References
+      description: Provide sources, credits, AI usage and references, if applicable. Harvard referencing style.
+      placeholder: "- <sub><ins>1</ins></sub> Name (Date). [Title](). Last Access: mm yyyy"
+      value: "- <sub><ins>1</ins></sub> Name (Date). [Title](). Last Access: mm yyyy <sup>COPY</sup>"
+    validations:
+      required: false

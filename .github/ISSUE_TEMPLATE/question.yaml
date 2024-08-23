@@ -1,0 +1,45 @@
+name: 🙋‍♀️ Support Request
+
+description: Ask a question or seek help with using the project.
+
+title: "[Question] 🙋‍♀️ "
+
+labels: ["question", "goodFirstIssue"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to ask a question! We're here to help, communicate and provide clarification on using the project.
+
+  - type: dropdown
+    id: question-context
+    attributes:
+      label: Question Context
+      description: Select the context that best fits your question.
+      options:
+        - New User
+        - Contributor
+        - Contact
+        - Reviewer
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your Question
+      description: Describe your question or the help you need.
+      placeholder: Enter your question here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Provide any relevant details, code snippets, or links that might help us better understand your question.
+      placeholder: Provide additional information here.
+    validations:
+      required: false

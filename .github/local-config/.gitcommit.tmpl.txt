@@ -1,0 +1,31 @@
+gmoji type: (scope) Short description  
+
+branch: main | branch
+tag: v.
+PREVIOUSLOG 2024.08.dd v0.0.1-0000  
+CHANGELOG 2024.08.dd v.0.0.1-0000  
+
+--- . ---  
+why: ...
+--- . ---  
+
+🔺🔺bump:⏏️.v
+    - :
+🔸 merge:🔄️./intent
+    - :
+🔺 add:📂./intent
+    - :
+🔹 modify:📂./intent
+    - :
+🔻 remove:📂./intent
+    - : 
+
+opens: #
+wip: #         
+resolves: #  
+seeAlso: #  
+    
+BREAKINGCHANGE: ✅ | ❌  
+---  
+
+Co-authored-by: @iPoetDev <ipoetdev-github-no-reply@outlook.com>

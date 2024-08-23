@@ -1,0 +1,102 @@
+name: 📝 Common Community Files Change Request
+
+description: Submit a request for changes or updates for common community files.
+
+title: "📝 [Common]: "
+
+labels: ["common-files", "docs", "requestForChange"]
+
+body:
+  - type: dropdown
+    id: common-files
+    attributes:
+      label: Community Files
+      description: The Common Commnity Files.
+      options:
+        - AUTHORS.{md|md.tmpl}
+        - CONTRIBUTORS.{md|md.tmpl}
+        - CONTRIBUTING.{md|md.tmpl}
+        - CODE_OF_CONDUCT.{md|md.tmpl}
+        - CITATIONS.{md|md.tmpl}
+        - CODEOWNERS.{md|md.tmpl}
+        - COMMUNITY_GUIDE.{md|md.tmpl}
+        - FUNDING_GUIDE.{md|md.tmpl}
+        - FUNDING.{yml|yaml}
+        - GOVERNANCE.{md|md.tmpl}
+        - ISSUES' Config.yml
+        - SECURITY_CONTACTS.{md|md.tmpl}
+        - SECURITY.{md|md.tmpl}
+        - SUPPORT.{md|md.tmpl}
+        - Other readme.md under 📂./.github
+        - codemeta.{json} - CodeFair App
+    validations:
+      required: true
+
+  - type: input
+    id: file-path-name
+    attributes:
+      label: Path & File Name
+      description: The name of the documentation file you are referencing.
+      placeholder: Enter the path and file name here.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: repo-location
+    attributes:
+      label: Location
+      description: GitHub artefact or feature where the documentation is located.
+      options:
+        - Markdown
+        - Templates
+        - Projects
+        - Wiki
+        - Discussions
+    validations:
+      required: true
+
+  - type: dropdown
+    id: change-type
+    attributes:
+      label: Type of Change
+      description: Select the type of change you are requesting.
+      options:
+        - Plan
+        - New/Missing
+        - Update Content
+        - Proofing Style
+        - Validate
+        - AI Correction
+        - Review
+        - Deprecate
+        - Removal
+    validations:
+      required: true
+
+  - type: textarea
+    id: rfc-outline
+    attributes:
+      label: RFC Outline
+      description: Outline, and description, of the request for change. 
+      placeholder: The request for change
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Provide any additional context or information about your request.
+      placeholder: Describe your request here.
+    validations:
+      required: false
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources and References
+      description: Provide sources, credits, AI usage and references, if applicable. Harvard referencing style.
+      placeholder: "- <sub><ins>1</ins></sub> Name (Date). [Title](). Last Access: mm yyyy"
+      value: "- <sub><ins>1</ins></sub> Name (Date). [Title](). Last Access: mm yyyy <sup>COPY</sup>"
+    validations:
+      required: false

@@ -1,0 +1,318 @@
+name: 🎯 Prompt Engineering
+
+description: Define and refine prompts for AI models.
+
+title: "[Prompt Engineering] 🎯: "
+
+labels: ["ai", "prompt-engineering", "model-tuning", "prompts", "open-source"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing to our prompt engineering efforts! Please fill out the following template to help us understand your goals and parameters.
+
+  - type: markdown
+    attributes:
+      value: |
+        [Start: Prompt Template Copy]
+
+  - type: input
+    id: overall-goal
+    attributes:
+      label: Title
+      description: Describe the title (goal/intent) of the prompt.
+      placeholder: What are you trying to achieve?
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        > <hr>
+        > <hr>
+        **[SYSTEM ROLE]**:
+
+  - type: textarea
+    id: system-role
+    attributes:
+      label: Role
+      description: Describe your role in this context.
+      placeholder: You are a ...
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        > <hr>
+        > <hr>
+        **[CONTEXT]**:
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide the context for the prompt.
+      placeholder: Describe the context here.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        > <hr>
+        > <hr>
+        **[MAIN INSTRUCTIONS]**:
+
+  - type: textarea
+    id: task-1
+    attributes:
+      label: Task 1
+      description: Describe the first task.
+      placeholder: Task 1 details here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: task-2
+    attributes:
+      label: Task 2
+      description: Describe the second task.
+      placeholder: Task 2 details here.
+    validations:
+      required: false
+
+  - type: textarea
+    id: task-3
+    attributes:
+      label: Task 3
+      description: Describe the third task.
+      placeholder: Task 3 details here.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        > <hr>
+        > <hr>
+        **[AUDIENCE]**:
+
+  - type: input
+    id: audience
+    attributes:
+      label: Audience
+      description: Who is the intended audience for this prompt?
+      placeholder: Audience details here.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        > <hr>
+        > <hr>
+        **[CONSTRAINTS]**:
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: List constraints for the prompt.
+      placeholder: Describe constraints here.
+    validations:
+      required: true
+
+  - type: input
+    id: tone
+    attributes:
+      label: Tone
+      description: Specify the desired tone (e.g., Formal, Optimistic).
+      placeholder: Tone here.
+    validations:
+      required: true
+
+  - type: input
+    id: writing-style
+    attributes:
+      label: Writing Style
+      description: Specify the writing style (e.g., Conversational, Informative).
+      placeholder: Writing style here.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: output-format
+    attributes:
+      label: Output Format
+      description: Select the desired output format.
+      options:
+        - JSON
+        - Markdown
+        - Text
+        - HTML
+        - Other (edit after submission)
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        > <hr>
+        > <hr>
+        **[ADDITIONAL INSTRUCTIONS]**:
+
+  - type: textarea
+    id: additional-instructions
+    attributes:
+      label: Additional Instructions
+      description: Provide any additional instructions.
+      placeholder: Additional instructions here.
+      value: |
+        - .
+        - .
+        - .
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        **[CLARIFICATION]**
+        If any question or task or parameter is unclear, please ask for clarification before any recommendations. If no ambiguity, proceed to the final instruction.
+
+  - type: markdown
+    attributes:
+      value: |
+        [Final Instruction]: 
+        Provide your recommendations based on the above parameters.
+
+  - type: markdown
+    attributes:
+      value: |
+        [End: Prompy Template] Stop Select + Copy.
+
+
+        > <hr>
+        > <hr>
+        > <hr>
+        
+        **[RUN SETTINGS]**:
+
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      description: Specify the AI Platform/OEM/Studio being used.
+      placeholder: Platform/Vendor name here & URL.
+    validations:
+      required: true
+
+  - type: input
+    id: model
+    attributes:
+      label: Model
+      description: Specify the AI model to use.
+      placeholder: Model name here.
+    validations:
+      required: true
+
+  - type: input
+    id: token-counts
+    attributes:
+      label: Token Counts
+      description: Specify the token count limits.
+      placeholder: Token counts here.
+    validations:
+      required: false
+
+  - type: input
+    id: temperature
+    attributes:
+      label: Temperature
+      description: Specify the temperature setting for creativity.
+      placeholder: Temperature value here.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: json-mode
+    attributes:
+      label: JSON Mode
+      description: Enable JSON mode.
+      options:
+        - label: Do you want to enable JSON mode?
+          required: false
+
+  - type: checkboxes
+    id: code-execution
+    attributes:
+      label: Code Execution
+      description: Allow code execution.
+      options:
+        - label: Do you allow code execution
+          required: false
+
+  - type: textarea
+    id: safety-settings
+    attributes:
+      label: Safety Settings
+      description: Describe any safety settings to apply.
+      placeholder: Safety settings here.
+    validations:
+      required: true
+
+  - type: input
+    id: stop-sequences
+    attributes:
+      label: Stop Sequences
+      description: Specify stop sequences.
+      placeholder: Stop sequences here.
+    validations:
+      required: false
+
+  - type: input
+    id: top-ps
+    attributes:
+      label: Top P
+      description: Specify the top P setting.
+      placeholder: Top P value here.
+    validations:
+      required: false
+
+  - type: textarea 
+    id: more-settings
+    attributes:
+      label: Additional Platform Settings
+      description: Provide any additional settings/platform.
+      placeholder: Additional settings here.
+      value: |
+        - .
+        - .
+        - .
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        #### Additional Settings: 
+        ##### OpenAI Playground
+        [OpenAI Completions] 
+        - Frequency penalty
+        - Presence penalty
+        - Best of
+        - Inject start text
+        - Inject restart text
+        - Show Probabilities.<br>
+        
+        [OpenAI Assistants] 
+        - File search
+        - Code Interpreter 
+        - Functions 
+        - API Version.<br>
+
+        [OpenAI Chat] 
+        - Frequency penalty 
+        - Presence penalty

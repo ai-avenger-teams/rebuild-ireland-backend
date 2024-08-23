@@ -1,0 +1,70 @@
+name: 🚀 Feature Request
+
+description: Suggest a new feature or enhancement for the project.
+
+title: "[Feature] 🚀 "
+
+labels: ["featureRequest", "topic:python", "topic:AI", "topic:ML"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest a new feature or enhancement! We appreciate your ideas and feedback to improve the project.
+
+  - type: dropdown
+    id: feature-topic
+    attributes:
+      label: Feature Topic
+      description: Select the topic that best fits your feature request.
+      options:
+        - UI
+        - Backend
+        - Python
+        - Packaging
+        - Application/API
+        - Data
+        - Security
+        - Integrations
+        - Testing
+        - Enchance
+        - Misc
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Provide a clear and concise description of the feature you would like to see implemented.
+      placeholder: Describe the feature here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: Explain how this feature would be beneficial and how it would be used in the context of the project.
+      placeholder: Describe the use case here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Provide any relevant details, code snippets, or links that might help us better understand your feature request.
+      placeholder: Provide additional information here.
+    validations:
+      required: false
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources and References
+      description: Provide sources, credits, AI usage and references, if applicable. Harvard referencing style.
+      placeholder: "- <sub><ins>1</ins></sub> Name (Date). [Title](). Last Access: mm yyyy"
+      value: "- <sub><ins>1</ins></sub> Name (Date). [Title](). Last Access: mm yyyy <sup>COPY</sup>"
+    validations:
+      required: false

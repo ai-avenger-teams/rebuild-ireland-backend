@@ -1,0 +1,57 @@
+name: 🛠️ Task Request
+
+description: Suggest a new task or enhancement for repository maintenance and configuration.
+
+title: "[Task] 🛠️ "
+
+labels: ["tasks", "configRepo", "configAction", "configSecrets", "userTasks", "repoMaintenance", "linting", "automations"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a new task! Your input helps us maintain and improve the repository effectively.
+
+  - type: dropdown
+    id: task-topic
+    attributes:
+      label: Task Topic
+      description: Select the topic that best fits your task request.
+      options:
+        - Repository Maintenance
+        - Config Files
+        - User Story Tasks
+        - GitHub Actions
+        - Secrets Management
+        - Linting
+        - Automations
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: task-description
+    attributes:
+      label: Task Description
+      description: Provide a clear and concise description of the task you would like to see implemented.
+      placeholder: Describe the task here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: Explain how this task would be beneficial and how it would improve the repository.
+      placeholder: Describe the use case here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Provide any relevant details, code snippets, or links that might help us better understand your task request.
+      placeholder: Provide additional information here.
+    validations:
+      required: false

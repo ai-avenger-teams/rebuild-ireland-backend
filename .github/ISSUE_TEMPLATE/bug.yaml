@@ -1,0 +1,64 @@
+name: 🐛 Bug Report
+
+description: File a bug report for code or techncial issues.
+
+title: "🐛 [Bug]: "
+
+labels: ["bug", "needsTriage"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current Behavior
+      description: A concise description of what you're experiencing.
+      placeholder: Describe the current behavior here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: A concise description of what you expected to happen.
+      placeholder: Describe the expected behavior here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Step one...
+        2. Step two...
+        3. See error...
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Please specify your environment.
+      placeholder: |
+        - OS: 
+        - Browser: 
+        - Version:
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Anything else?
+      description: Links? References? Anything that will give us more context about the issue you are encountering!
+      placeholder: Provide any additional information here.
+    validations:
+      required: false

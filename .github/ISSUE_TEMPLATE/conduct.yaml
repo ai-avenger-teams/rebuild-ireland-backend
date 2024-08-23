@@ -1,0 +1,134 @@
+name: 📜 Code of Conduct
+
+description: Discuss or report issues related to the Code of Conduct.
+
+title: "[Code of Conduct] 📜: "
+
+labels: ["conduct", "code_of_conduct", "needsDiscussion"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Guidelines to Create a Code of Conduct** for <ins>Hackathons</ins>
+        - [ ] Assemble for a team meeting
+        - [ ] Faciliate an open and positive discussion on team conduct and team principles.
+        - [ ] Encourage pyschological safety and team excellence.
+        - [ ] Provide feedback and seek further guidance if necessart.
+        - [ ] Vote, by majority, for acceptance. Enquire on best choice to do this. 
+        - [ ] Adapt and publish a new code of conduct.
+        - [ ] Create an open and welcoming community.
+
+  - type: markdown
+    attributes:
+      value: |
+        # Contributor Covenant Code of Conduct
+
+        ## Our Pledge
+        We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+
+        We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
+
+  - type: textarea
+    id: our-pledge
+    attributes:
+      label: Our New Pledge
+      description: Update, following a discussion, the aforemented pledge describing a new pledge of team participation during a hackathon.
+      placeholder: Insert old pledge or new/adapted pledge here.
+    validations:
+      required: true
+
+
+  - type: textarea
+    id: our-standards
+    attributes:
+      label: Our Standards
+      description: Describe behaviors that contribute to a positive team environment and those that are unacceptable. Update as per team agreements.
+      placeholder: List examples of both positive and unacceptable behaviors here.
+      value: |
+          ### Acceptable Team Behaviours
+          - .
+          - .
+          ### Unacceptable Team Behaviours
+          - .
+          - .
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Hackathon Terms and Conditions
+        Insert the specific T&C per each hackathon.
+
+  - type: textarea
+    id: hackathon-terms
+    attributes:
+      label: Hackathon Terms and Conditions
+      description: Describe the responsibilities of community leaders in enforcing the Code of Conduct.
+      placeholder: Explain enforcement responsibilities here.
+      value: |
+        **NAME**: `{edit: hackathon-name}`
+        **URL**: `{edit: hackathon-url}`
+        **CONTACT**: `{edit: hackathon-emails}`
+
+        ### Hackathon T&Cs
+        `{add: hackathon terms and conditions here}``
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        Conduct within the organising Hackathon's Competitions Code of Conduct will surpase the team/community local Code of Conduct, and where circumstances and examples are brought to their attention.
+
+        > <hr>
+        > <hr>
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Enforcement
+        Refer to [../../CODE_OF_CONDUCT.md](../../CODE_OF_CONDUCT.md) for more details on sample statements. Updated as needed.
+
+  - type: textarea
+    id: enforcement-responsibilities
+    attributes:
+      label: Enforcement Responsibilities
+      description: Describe the responsibilities of community leaders in enforcing the Code of Conduct. Use existing or update per team agreements.
+      placeholder: Explain enforcement responsibilities here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Describe the scope of the Code of Conduct. Use existing or update per team agreements.
+      placeholder: Explain where and when the Code of Conduct applies.
+    validations:
+      required: true
+
+  - type: textarea
+    id: enforcement
+    attributes:
+      label: Enforcement
+      description: Describe how instances of unacceptable behavior can be reported and handled. Use existing or update per team agreements.
+      placeholder: Explain the enforcement process here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: enforcement-guidelines
+    attributes:
+      label: Enforcement Guidelines
+      description: Describe the guidelines for determining consequences for violations. Use existing or update per team agreements.
+      placeholder: List the enforcement guidelines here.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Attribution
+        This Code of Conduct is adapted from the Contributor Covenant, version 2.0, available at https://www.contributor-covenant.org/version/2/0/code_of_conduct.html

@@ -1,0 +1,128 @@
+name: 🫡 Hackathon Contributor Profile
+
+description: Share your profile as a hackathon contributor.
+
+title: "[Hackathon Profile] "
+
+labels: ["hackathon", "hackathon-contributor", "profiles", "needsReviews"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your profile! Let's get to know you better. 
+        This will be public, so only disclose information you're comfortable sharing.
+
+  - type: textarea
+    id: introduction
+    attributes:
+      label: Hi I am ...
+      description: Introduce yourself briefly.
+      placeholder: Tell us a bit about yourself!
+    validations:
+      required: true
+
+  - type: textarea
+    id: skills
+    attributes:
+      label: I know ...
+      description: List your skills and areas of expertise.
+      placeholder: What technologies, languages, or tools are you proficient in?
+    validations:
+      required: false
+
+  - type: textarea
+    id: capabilities
+    attributes:
+      label: I can ...
+      description: Describe what you're capable of doing.
+      placeholder: What tasks or roles can you take on in a project?
+    validations:
+      required: false
+
+  - type: textarea
+    id: achievements
+    attributes:
+      label: I built / delivered ...
+      description: Share some of your past projects or achievements.
+      placeholder: What have you created or contributed to in the past?
+    validations:
+      required: false
+
+  - type: input
+    id: github-profile
+    attributes:
+      label: My GitHub is ...
+      description: Provide a link to your GitHub profile.
+      placeholder: https://github.com/yourusername
+    validations:
+      required: true
+
+  - type: textarea
+    id: team-role
+    attributes:
+      label: My optimal team role is ...
+      description: What role do you think you'd be best at in a team?
+      placeholder: e.g., Frontend Developer, Project Manager, UX Designer
+    validations:
+      required: false
+
+  - type: textarea
+    id: likes
+    attributes:
+      label: I like to ...
+      description: Share some things you enjoy doing.
+      placeholder: What aspects of development or teamwork do you particularly enjoy?
+    validations:
+      required: false
+
+  - type: textarea
+    id: dislikes
+    attributes:
+      label: I don't like to ...
+      description: Share some things you prefer not to do.
+      placeholder: What tasks or situations do you try to avoid?
+    validations:
+      required: false
+
+  - type: textarea
+    id: preferences
+    attributes:
+      label: I prefer to ...
+      description: Share your workstyle and time boundaries preferences.
+      placeholder: How do you like to work? Any specific methodologies or environments?
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        --- 
+        \#\# Fun Finish - Team Spirit.
+
+  - type: textarea
+    id: fun-finish
+    attributes:
+      label: Fun Finish (Team spirit)
+      description: Share something fun or inspiring about teamwork.
+      placeholder: Use Markdown to format a fun title or quote about team spirit!
+    validations:
+      required: false
+
+  - type: textarea
+    id: have-i-ever
+    attributes:
+      label: Have I ever, ever?
+      description: List 1 or 2 things you've done and have a brief story or mention. Keep it NSFW/Sane-ish.  This is in public.
+      placeholder: Share some interesting experiences!
+    validations:
+      required: false
+
+  - type: textarea
+    id: have-i-never
+    attributes:
+      label: Have I never, never
+      description: List 1 or 2 things you would like to do but have never done. Keep it NSFW/Sane-ish. This is in public.
+      placeholder: What's on your bucket list?
+    validations:
+      required: false

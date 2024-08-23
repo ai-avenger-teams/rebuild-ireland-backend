@@ -1,0 +1,289 @@
+name: 🤖 🅱️ AI Data Flow Advanced
+
+description: Workflow, and structural breakdown, of the AI Problem.
+
+title: "[AI & Data: 🅱️ Advanced:] 🤖: "
+
+labels: ["ai", "data", "workflow", "problem-identification"]
+
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        ## The AI Hackathon Brief 
+
+  - type: markdown 
+    attributes:
+      value: |
+        ### 🅰️ Ideas and topics for recent users of LLMs & AI Tools.
+
+        <sup><b><ins>Reference only</ins></b></sup>
+
+        - Create Business Plans, pitch decks, GTM roadmap, logo, creative content, financial projections by using AI tools.
+        - Use powerful AI models like Google’s Gemini, OpenAI’s ChatGPT-4o to reduce the time as an entrepreneur to build business plans and grow revenue.
+        - Focus more on strategy and idea itself.
+        - Objective is to see AI or digital tools empower the work and produce interesting content.
+        
+        <sup><i>Create 🅰️ Simple AI & Data Flow <i></sup>
+
+  - type: markdown
+    attributes:
+      value: |
+        ### 🅱️ Ideas and topics for Advanced users of LLMs.
+
+        <sup><b><ins>Continue below</ins></b></sup>
+        
+        - Select a topic based on your domain knowledge and experience, the importance of the issue, or the maximum benefit it can provide.
+        ---
+        - Identify a significant real-world pain point in our everyday life to use LLMs to tackle those issues
+        - Conduct quick research or gather data to support the importance of this problem
+        - Ensure that the problem is well defined and supported by evidence
+
+        <sup><i>Use 🅱️ AI Data Flow Advanced <i></sup>
+
+  - type: markdown
+    attributes:
+      value: |
+        <br>  
+       
+        > <hr>
+        > <hr>
+        
+        <br>
+
+  - type: markdown
+    attributes:
+      value: |
+        ## The AI & Data Problem
+
+  - type: dropdown
+    id: problem-context
+    attributes:
+      label: AI Data Problem Context (Potential/Chosen)
+      description: Define or identify the AI & Data problem, if not already done so. From Appendix A from Hackathon Guidelines
+      options:
+        - 1️⃣ Agriculture
+        - 2️⃣ Health
+        - 3️⃣ Housing
+        - 4️⃣ Population and Society
+        - 5️⃣ Science and Technology
+        - 6️⃣ Transport
+        - 7️⃣ Justice, Legal System, and Public Safety
+        - 8️⃣ Economy and Finance
+        - 9️⃣ Education and Sport
+        - 🔟 Energy
+    validations:
+      required: false
+
+  - type: textarea
+    id: ai-problem-description
+    attributes:
+      label: AI Problem Identification Outline
+      description: Begin with the identification of a significant pain point. Outline that the problem is well defined and can be supported by evidence will effectively guide the development process
+      placeholder: Describe the stage here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: ai-data-use-case
+    attributes:
+      label: AI Use Case & Examples
+      description: Provide a clear and concise description of the AI & Data use case, scenarios and examples.
+      placeholder: Describe the use case, and or examples, here.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        <br>  
+       
+        > <hr>
+        > <hr>
+        
+        <br>
+
+  - type: markdown
+    attributes:
+      value: |
+        ## The AI & Data Workflow.
+        - 1️⃣ Problem Identification
+        - 2️⃣ Data Collection
+        - 3️⃣ Data Processing
+        - 4️⃣ Algorithm Selection
+        - 5️⃣ Model Training
+        - 6️⃣ Testing & Validation
+        - 7️⃣ Iterations & Improvement
+        - 8️⃣ Deployment
+        - 9️⃣ Feedback Loop
+        - 🔟 Continuous Learning
+
+  - type: dropdown
+    id: ai-data-stage
+    attributes:
+      label: AI Data Stage
+      description: Select the stage of AI Data Workflow.
+      options:
+        - 1️⃣ Problem Identification
+        - 2️⃣ Data Collection
+        - 3️⃣ Data Processing
+        - 4️⃣ Algorithm Selection
+        - 5️⃣ Model Training
+        - 6️⃣ Testing & Validation
+        - 7️⃣ Iterations & Improvement
+        - 8️⃣ Deployment
+        - 9️⃣ Feedback Loop
+        - 🔟 Continuous Learning
+    validations:
+      required: true
+
+  - type: textarea
+    id: ai-data-stage-description
+    attributes:
+      label: AI Stage Description
+      description: Provide a clear and concise description of the AI & Data stage you would like to see implemented.
+      placeholder: Describe the stage here.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        <br> 
+
+        >> <hr>
+        
+        <br>
+
+  - type: markdown
+    attributes:
+      value: |
+        ## The AI & Data Tasks. 
+        Select the first/primary task, and if more than one, edit issue after creation. This is a suggested end-to-end workflow.
+
+  - type: markdown
+    attributes:
+      value: |
+        Task Flow:
+        \- [ ] 1️⃣ 01 Define the task
+        \- [ ] 1️⃣ 02 Identify goals
+        \- [ ] 1️⃣ 03 Understand the Requirements
+        \- [ ] 2️⃣ 02 Gather relevant data
+        \- [ ] 2️⃣ 02 Ensure Data Diversity
+        \- [ ] 2️⃣ 03 Prioritise Data Sources
+        \- [ ] 3️⃣ 01 Clean the data
+        \- [ ] 3️⃣ 02 Organise Information
+        \- [ ] 3️⃣ 03 Format for Analysis
+        \- [ ] 4️⃣ 01 Choose appropriate models
+        \- [ ] 4️⃣ 02 Consider task complexity
+        \- [ ] 4️⃣ 03 Evaluate efficiency
+        \- [ ] 5️⃣ 01 Feed the data into model
+        \- [ ] 5️⃣ 02 Adjust parameters
+        \- [ ] 5️⃣ 03 Optimise Performance
+        \- [ ] 6️⃣ 01 Assess model accuracy
+        \- [ ] 6️⃣ 02 Cross-validate results
+        \- [ ] 6️⃣ 03 Enusre reliability
+        \- [ ] 7️⃣ 01 Refine Algorithims
+        \- [ ] 7️⃣ 02 Enhance data quality
+        \- [ ] 7️⃣ 03 Optimise parameters
+        \- [ ] 8️⃣ 01 Integrate into systems
+        \- [ ] 8️⃣ 02 Monitor real-world performance
+        \- [ ] 8️⃣ 03 Ensure scalability
+        \- [ ] 9️⃣ 01 Collecrt user feedback
+        \- [ ] 9️⃣ 02 Anlayse performance data
+        \- [ ] 9️⃣ 03 Update model accordingly
+        \- [ ] 🔟 01 Adapt to new data
+        \- [ ] 🔟 02 Evolve with new 
+        \- [ ] 🔟 03 Maintain relevance
+
+  - type: dropdown
+    id: ai-data-task
+    attributes:
+      label: AI Data Task
+      description: Select the specific task within the AI Data Workflow. Optional.
+      options:
+        - 1️⃣ 01 Define the task
+        - 1️⃣ 02 Identify goals
+        - 1️⃣ 03 Understand the Requirements
+        - 2️⃣ 01 Gather relevant data
+        - 2️⃣ 02 Ensure Data Diversity
+        - 2️⃣ 03 Prioritize Data Sources
+        - 3️⃣ 01 Clean the data
+        - 3️⃣ 02 Organize Information
+        - 3️⃣ 03 Format for Analysis
+        - 4️⃣ 01 Choose appropriate models
+        - 4️⃣ 02 Consider task complexity
+        - 4️⃣ 03 Evaluate efficiency
+        - 5️⃣ 01 Feed the data into model
+        - 5️⃣ 02 Adjust parameters
+        - 5️⃣ 03 Optimize Performance
+        - 6️⃣ 01 Assess model accuracy
+        - 6️⃣ 02 Cross-validate results
+        - 6️⃣ 03 Ensure reliability
+        - 7️⃣ 01 Refine Algorithms
+        - 7️⃣ 02 Enhance data quality
+        - 7️⃣ 03 Optimize parameters
+        - 8️⃣ 01 Integrate into systems
+        - 8️⃣ 02 Monitor real-world performance
+        - 8️⃣ 03 Ensure scalability
+        - 9️⃣ 01 Collect user feedback
+        - 9️⃣ 02 Analyze performance data
+        - 9️⃣ 03 Update model accordingly
+        - 🔟 01 Adapt to new data
+        - 🔟 02 Evolve with new insights
+        - 🔟 03 Maintain relevance
+    validations:
+      required: false
+
+  - type: textarea
+    id: ai-data-task-description
+    attributes:
+      label: AI Stage's Task Description
+      description: Explain how this stage/task would be beneficial and how it would be used in the context of the stage/project/problem or workflow.
+      placeholder: Describe the use case here.
+      value: |
+        - [ ] Task 1
+        - [ ] Task 2
+        - [ ] Task 3
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        <br>  
+       
+        > <hr>
+        > <hr>
+
+        <br>
+        ### Footer
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Resources
+      description: Provide any relevant resources, platforms, or links that might help us better understand your AI or data workflow or breakdown.
+      placeholder: Provide additional information here.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Provide any other relevant details that might help us better understand the AI or data workflow or breakdown.
+      placeholder: Provide additional information here.
+    validations:
+      required: false
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources and References
+      description: Provide sources, credits, AI usage and references, if applicable. Harvard referencing style.
+      placeholder: "- <sub><ins>1</ins></sub> Name (Date). [Title](). Last Access: mm yyyy"
+      value: "- <sub><ins>1</ins></sub> Name (Date). [Title](). Last Access: mm yyyy <sup>COPY</sup>"
+    validations:
+      required: false

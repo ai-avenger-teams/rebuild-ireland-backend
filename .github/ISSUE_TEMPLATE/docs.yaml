@@ -1,0 +1,120 @@
+name: 📝 Docs Change Request
+
+description: Submit a request for changes or updates to the documentation.
+
+title: "📝 [Docs]: "
+
+labels: ["docs", "requestForChange"]
+
+body:
+  - type: dropdown
+    id: docs-context
+    attributes:
+      label: Docs Context
+      description: The path to the documentation file.
+      options:
+        - Getting Started
+        - Requirements
+        - Installation
+        - Configuration
+        - Usage
+        - Troubleshooting
+        - Reference
+        - Wiki
+        - Contributing
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: file-name
+    attributes:
+      label: File Name
+      description: The name of the documentation file you are referencing.
+      placeholder: Enter the file name here.
+    validations:
+      required: true
+
+  - type: input
+    id: file-path
+    attributes:
+      label: File Path
+      description: The path to the documentation file.
+      placeholder: Enter the file path here.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: repo-location
+    attributes:
+      label: Location
+      description: GitHub artefact or feature where the documentation is located.
+      options:
+        - Markdown
+        - Templates
+        - Projects
+        - Wiki
+        - Discussions
+    validations:
+      required: true
+
+  - type: dropdown
+    id: change-type
+    attributes:
+      label: Type of Change
+      description: Select the type of change you are requesting.
+      options:
+        - Plan
+        - New/Missing
+        - Update Content
+        - Proofing Style
+        - Validate
+        - AI Correction
+        - Review
+        - Deprecate
+        - Removal
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ai-generation
+    attributes:
+      label: AI Generation
+      description: Use of AI generation.
+      options:
+        - Not applicable
+        - Ideation
+        - Documentation
+        - Code
+        - Code and Documention
+      default: 0  
+    validations:
+      required: true
+
+  - type: textarea
+    id: rfc-outline
+    attributes:
+      label: RFC Outline
+      description: Outline, and description, of the request for change. 
+      placeholder: The request for change
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Provide any additional context or information about your request.
+      placeholder: Describe your request here.
+    validations:
+      required: false
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources and References
+      description: Provide sources, credits, AI usage and references, if applicable. Harvard referencing style.
+      placeholder: "- <sub><ins>1</ins></sub> Name (Date). [Title](). Last Access: mm yyyy"
+      value: "- <sub><ins>1</ins></sub> Name (Date). [Title](). Last Access: mm yyyy <sup>COPY</sup>"
+    validations:
+      required: false

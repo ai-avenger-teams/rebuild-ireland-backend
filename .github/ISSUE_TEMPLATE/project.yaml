@@ -1,0 +1,98 @@
+name: 🚀 Project Init
+
+description: Define the higher level project goals, scope, and deliverables.
+
+title: "[Project] 🎯: "
+
+labels: ["projectInit", "topic:goals", "topic:scope", "topic:deliverables", "topic:NFR", "topic:non-fnctiona-reqs",]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest a new project or enhancement! We appreciate your ideas and feedback to improve the project.
+
+  - type: dropdown
+    id: project-topic
+    attributes:
+      label: Project Topic
+      description: Select the topic that best fits your project request.
+      options:
+        - Project Brief
+        - Problem Statement
+        - Goals
+        - Scope
+        - Requirements
+        - Architecture
+        - Design
+        - Development
+        - Testing
+        - Deployment
+        - Monitoring
+        - Documentation
+        - Maintenance
+        - Support
+        - Community
+        - Packaging
+        - Application/API
+        - Data
+        - Security
+        - Integrations
+        - Misc
+    validations:
+      required: true
+
+  - type: textarea
+    id: project-description
+    attributes:
+      label: Project Description
+      description: Provide a clear and concise description of the project you would like to see implemented.
+      placeholder: Describe the project here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: Explain how this project would be beneficial and how it would be used in the context of the project.
+      placeholder: Describe the use case here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: project-scope
+    attributes:
+      label: Project Scope
+      description: Provide a clear and concise description, or list of items, of the project you would like to see implemented, and is in scope.
+      placeholder: Describe the project | in scope items here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: future-scope
+    attributes:
+      label: Future Scope
+      description: Provide a clear and concise list of tasks of the project you would may want to see implemented in the future, but is not in scope.
+      placeholder: Describe the out of scope project items here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Provide any relevant details, code snippets, or links that might help us better understand your project request.
+      placeholder: Provide additional information here.
+    validations:
+      required: false
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources and References
+      description: Provide sources, credits, AI usage and references, if applicable. Harvard referencing style.
+      placeholder: "- <sub><ins>1</ins></sub> Name (Date). [Title](). Last Access: mm yyyy"
+      value: "- <sub><ins>1</ins></sub> Name (Date). [Title](). Last Access: mm yyyy <sup>COPY</sup>"
+    validations:
+      required: false

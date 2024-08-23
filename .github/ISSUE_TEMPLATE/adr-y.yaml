@@ -1,0 +1,103 @@
+name: 📜 Decision Record
+
+description: Record architectural decisions (Y-Statements) made in the project.
+
+title: "[ADR-Y] 📜 "
+
+labels: ["adr", "y-statement", "needsReview"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for documenting a decision record! Please fill out the following template to help us understand the context and details of the decision. [Y-Statements](https://medium.com/olzzio/y-statements-10eb07b5a177 "A light template for architectural decision capturing")
+
+  - type: dropdown
+    id: Areas
+    attributes:
+      label: Area
+      description: Select the topic that best fits your decision record.
+      options:
+        - Initiation & Setup
+        - Requirements Gather & Refinement
+        - Architectural & Technical Design
+        - 3rd Party Integrations
+        - Design & UX
+        - Environment & Tooling
+        - Code & Reviews
+        - Continual Integration
+        - Testing
+        - Deploy & Release
+        - Security & Compliance
+        - Governance
+        - Other
+        - Known
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Describe the functional requirement (story, use case) or architectural component.
+      placeholder: Describe the context here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: facing
+    attributes:
+      label: Facing
+      description: Describe the non-functional requirement, for instance, a desired quality.
+      placeholder: Describe the facing here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: we-decided
+    attributes:
+      label: We Decided
+      description: Describe the decision outcome (arguably the most important part).
+      placeholder: Describe the decision outcome here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: neglected-alternatives
+    attributes:
+      label: Neglected Alternatives
+      description: Describe the alternatives that were not chosen.
+      placeholder: Describe the neglected alternatives here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: to-achieve
+    attributes:
+      label: To Achieve
+      description: Describe the benefits, the full or partial satisfaction of requirement(s).
+      placeholder: Describe the benefits here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: accepting-that
+    attributes:
+      label: Accepting That
+      description: Describe the drawbacks and other consequences, for instance, the impact on other properties/context and effort/cost (both short term and long term).
+      placeholder: Describe the drawbacks and consequences here.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        \#\#\# Template Guide for Y-Statements as a simple sentance (or split).
+        ***
+        Each template element appears on one line in the above example:
+        1. *context*: `functional requirement` (story, use case) or arch. component,
+        2. *facing*: `non-functional requirement, for instance a desired quality,  
+        3. *we decided*: `decision outcome` (arguably the most important part),
+        4. and *neglected alternatives* not chosen (not to be forgotten!),
+        5. *to achieve*: `benefits``, the full or partial satisfaction of requirement(s),
+        6. *accepting that*: `drawbacks and other consequences`, for instance impact on other properties/context and effort/cost (both short term and long term).
