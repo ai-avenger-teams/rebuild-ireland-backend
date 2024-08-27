@@ -1,0 +1,4 @@
+env/
+env.py
+venv/
+.vscode/
