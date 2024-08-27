@@ -1,5 +1,5 @@
 """
-URL configuration for color_wheel project.
+URL configuration for base project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -22,5 +22,5 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('auth.urls')),
-    path('api/', include('base.urls')),
+    path('api/', include('api.urls')),
 ]
